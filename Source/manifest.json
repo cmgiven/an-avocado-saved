@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "An Avocado Saved",
+	"version": "1.0",
+	"description": "Replaces dollar figures with the equivalent amount of avocados.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
